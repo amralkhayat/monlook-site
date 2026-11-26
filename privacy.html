@@ -24,7 +24,7 @@
     <a href="privacy.html" aria-current="page">Privacy Policy</a>
   </nav>
 
-  <p><strong>Effective date:</strong> 14 November 2026</p>
+  <p><strong>Effective date:</strong> 26 November 2026</p>
   <p>MonLook ("the app") is a virtual makeup app made by Ahmed Mansour (publisher) and Amr Elkhayat (developer) ("we", "us"). This policy explains what information the app uses, why, and what happens to it. Section 9 also explains website hosting and support emails.</p>
   <p><strong>The short version:</strong> current versions process your camera, face and selected photos on your iPhone and do not upload them to us. There are no accounts, analytics SDKs or ads. You can choose to export an image through Share. Earlier beta versions used analytics as described in section 4.</p>
   <h2>Which versions this policy covers</h2>
@@ -35,6 +35,15 @@
     <li>To place makeup correctly, the app finds the position of your eyes, brows, lips and face outline in each camera frame using Apple's on-device Vision framework. It also measures the brightness of your face so makeup follows the light, and, when you tap <strong>Match my skin</strong>, the average colour of your cheeks and forehead.</li>
     <li><strong>All of this happens only on your iPhone.</strong> Camera images, face positions, skin tone and brightness measurements are not sent to us or to anyone else, are not stored after the camera frame is drawn, and are never used for identification, advertising or any purpose other than showing makeup to you.</li>
     <li>The optional <strong>Face tracking test</strong> uses Apple's ARKit on supported iPhones to check face tracking. It also runs entirely on your device and stores nothing except the fact that you finished the test.</li>
+  </ul>
+  <h3 id="face-data">Face data and the TrueDepth camera, in detail</h3>
+  <ul>
+    <li><strong>What face data the app uses:</strong> (a) in Camera mode, Apple's Vision framework gives the app the 2D positions of facial features (eyes, brows, lips, face outline) in each front-camera frame, plus the brightness of the face and, only when you tap Match my skin, the average colour of the cheeks and forehead; (b) only in the optional Face tracking test, on iPhones with a TrueDepth camera, Apple's ARKit gives the app a 3D face mesh, the head's position and angle, and two expression values (eye blink and jaw open).</li>
+    <li><strong>Why:</strong> only to draw makeup in the right place on your face, to match a foundation shade when you ask, and, in the Face tracking test, to check that your device tracks head turns, blinks and mouth movement. Face data is never used to identify you, for advertising or marketing, to build a profile, to train machine-learning models, or for any other purpose.</li>
+    <li><strong>Where it is stored:</strong> only in your iPhone's memory while the camera is open. Face landmarks, face meshes, head pose, expression values, brightness and skin-colour measurements are never written to storage, never sent off the device, and are not collected by us.</li>
+    <li><strong>How long it is kept:</strong> each measurement is discarded as soon as the camera frame it came from has been drawn, a fraction of a second. Nothing is kept after you leave the camera or the Face tracking test. The only face-related records kept are ones you create yourself: the name of a matched foundation shade inside a look or preset you save, the Before and After photos of a look you choose to save (section 2), and the fact that you finished the test (section 3).</li>
+    <li><strong>Sharing with third parties:</strong> face data is not shared with, sold to, or disclosed to anyone, including us. The app contains no third-party SDKs. A photo leaves the device only if you export it yourself with Share (section 2).</li>
+    <li><strong>Deletion:</strong> live face data is deleted automatically, frame by frame. You can delete saved looks in the app at any time, and deleting the app removes everything it stored.</li>
   </ul>
   <h2>2. Photos</h2>
   <ul>
